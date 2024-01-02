@@ -5,8 +5,24 @@ html, body {
   height: 100%;
 }
 #map {
+width: 82%;
+height: 600px;
+position: absolute;
+
+}
+
+.header {
+padding-bottom: 30px; /* some padding */
+padding-top: 10px;
+padding-left: 40px;
+background: #115696; /* green background */
+color: white; /* white text color */
+position: relative;
+
+}
+/* #map {
   position: absolute;
   top: 0;
   bottom: 0;
   width: 100%;
-}
+} */
