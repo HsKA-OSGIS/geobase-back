@@ -39,13 +39,17 @@
   padding-top: 0%; 
       }
 
-      .footer{
-   position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 20px;
- 
+      .footer {
+        padding: 20px; /* Some padding */
+        display: table;        width: 100%;
+        table-layout: fixed; 
+        background: #bfceeb; /* Blue background */
       }
+            .footer span{
+        display: table-cell;
+        text-align: center;
+        padding: 10px;
+            }
 
       .titles{
   text-align: justify;        
@@ -214,100 +218,113 @@
   margin-left: 15px;
 
       }
+      p {
+  margin: 10px 0;
+  padding: 5px;
+  border: 1px solid #999;}
 
   </style>
 
+
+<body>
+    
+  <div class="header">
+    <div class="logo">
+       <img src="media/geobas_logo.png" height="100xp" width="100xp" style="float:left;">
+    </div>
+    <div class="titles">
+      <h2> Geobase </h2>
+      <h3>Exploring OGC API with Geoserver and OpenLayers : Gamma Dose Rates</h3>
+    </div>
+  </div>
   
-  <body>
+  <div class="navbar">
+    <a href="index.html">Home</a>
+      <a href="orginal_data_source.html">Original Data Souce</a>
+      <a href="ogc_api_documentation.html">OGC API Documentation</a>
+      <a href="about_the_project.html">About the Project</a>
+      <a href="license.html">Licence</a>
+      <a href="github_repository.html" class="right">Our GitHub Repository</a>
     
-    <div class="header">
-      <div class="logo">
-         <img src="logo2_Kopie.png" height="100xp" width="100xp" style="float:left;">
-      </div>
-      <div class="titles">
-        <h2> Geobase </h2>
-        <h3>Gamma Dose Rates:</h3>
-      </div>
-    </div>
-    
-    <div class="navbar">
-      <a href="https://www.imis.bfs.de/geoportal/">Original Data</a>
-      <a href="https://ogcapi.ogc.org/">OGC API Documentation</a>
-      <a href="https://github.com/HsKA-OSGIS/geobase-back" class="right">Our GitHub</a>
+  </div>
+  
+  <!-- <div id="map"></div>
+  <script type="module" src="./main.js"></script> -->
+
+
+  <div class="row">
+
+      <div id="map" class="map"></div>
       
+      <div class="side">
+        <div class="Legend">
+     
+          <h3 >Legend:</h3>
+          <img src="media/legend.jpeg">
+          
+        </div>
+       
+        <div class="LayerSwitch">
+          <h3 style="font-family:verdana;">Layers</h3>
+          <input type="radio" name="baseLayerRadioButton" value="OSMStandard" checked>OSM Standard<br>
+          <input type="radio" name="baseLayerRadioButton" value="BlueMarble" >Blue Marble
+        </div>
+       
+      
+      </div>
+    </div>
+
+
+    <div class="footer" style="font-size: x-small; color: #666;">
+      <span class="About_the_Team">
+      <h4 style="color:  #444">About the Team</h4>
+      <p style="margin: 10px 0;padding: 5px;border: 3px ;text-indent: 10px;">
+          The Geobase Team:
+          <br>
+          Alina Khamzatova, İrem Köz, Tanha Tanjimat & <br>Abubakar Siddique.   
+          </p>
+      </span>
+    
+      <span class="projectDetails">
+          <h4 style="color:  #444">About the Project:</h4>
+          <p style="margin: 10px 0;padding: 5px;border: 3px ;text-indent: 10px;"> Our Project is Exploring OGC (Open Geospatial Consortium) API with Geoserver and OpenLayers (based on BfS (Bundesamt für Strahlenschutz) radiological OGC services).
+            </p>
+      </span>  
+    
+      <span class="licensing">
+      <h4 style="color:  #444"> Licenses:</h4>
+      <p style="margin: 10px 0;padding: 5px;border: 3px ;text-indent: 10px;">
+        BSD 2-Clause License<br> <br>
+        © Copyright 2023-2024, Geobase Contributors <br> 
+        <!--
+      All code runs under the following licenses: <br> 
+      Open Layers: <a href="https://opensource.org/licenses/BSD-2-Clause">BSD 2-Clause License</a>,
+      Geobase: <a href="https://opensource.org/licenses/BSD-2-Clause">BSD 2-Clause License</a>, ODL Data: <a href="http://www.gesetze-im-internet.de/geonutzv/eingangsformel.html">GeoNutzV</a>, <a href="https://www.govdata.de/dl-de/by-2-0">DL-DE->BY-2.0</a> <br/>
+      Blue Marble Basemap: <a href="https://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause (New) License </a>
+    -->
+    
+    </p>
+      </span>  
+    
+      <span class="Contact">
+      <h4 style="color:  #444"> Contact:</h4>
+      <p style="margin: 10px 0;padding: 5px;border: 3px ;text-indent: 10px;">
+      E-mail:geobase@xxx.xx<br/> 
+      Phone: xxx.xxxxxxxx<br/>
+      github:<a href="https://github.com/HsKA-OSGIS/geobase-back" >https://github.com/HsKA-OSGIS/geobase-back</a>
+    
+      </p>
+      </span>  
     </div>
     
-    <!-- <div id="map"></div>
-    <script type="module" src="./main.js"></script> -->
-
-
-    <div class="row">
-
-        <div id="map" class="map"></div>
-        <div class="side">
-          <div class="Legend">
-            <h3 >Legend:</h3>
-            <img src="Legend.png">
-          </div>
-          
-          <div class="LayerSwitch">
-            <h3 style="font-family:verdana;">Layers</h3>
-            <input type="radio" name="baseLayerRadioButton" value="OSMStandard" checked>OSM Standard<br>
-            <input type="radio" name="baseLayerRadioButton" value="BlueMarble" >Blue Marble
-          </div>
-         
-          
-        </div>
-      </div>
-
-
-
-    
-
-        <div class="footer" style="font-size: x-small; color: #666;">
-            <span class="About_the_Team">
-            <h4 style="color:  #444">About the Team</h4>
-            <p style="text-align: justify">
-                The Geobase Team:
-                <br/>
-                Alina Khamzatova, İrem Köz, Tanha Tanjimat, Abubakar Siddique.   
-                </p>
-            </span>
-    
-            <span class="projectDetails">
-              <h4 style="color:  #5a5959">About the Project:</h4>
-              <p style="text-align: justify"> This webpage presents the latest hourly gamma dose rates from German measurement stations, sourced from the <a rel="bfs" href="https://www.imis.bfs.de/geoportal/">Bundesamt für Strahlenschutz</a> website. It showcases data using the <a href="https://ogcapi.ogc.org/features/">new OGC API-Feature standard</a> instead of the traditional WFS standard, serving as an example for future adoptions of this OGC Standard. For more details on the new OGC API standard, refer to the link in the top menu bar. 
-              </p>
-          </span>  
-    
-            <span class="licensing">
-              <h4 style="color:  #5a5959"> Licenses:</h4>
-              <p style="text-align: justify">
-              All code runs under the following licenses: <br> 
-              GeoServer:&nbsp; <a href="https://opensource.org/license/gpl-2-0/">GNU General Public License version 2</a><br/> 
-              Open Layers:&nbsp; <a href="https://opensource.org/licenses/BSD-2-Clause">BSD 2-Clause License</a><br/> 
-              Geobase:&ensp;&nbsp; <a href="https://opensource.org/license/gpl-2-0/">GNU General Public License version 2</a><br/>
-              ODL Data:&emsp;&emsp; <a href="http://www.gesetze-im-internet.de/geonutzv/eingangsformel.html">GeoNutzV</a>, <a href="https://www.govdata.de/dl-de/by-2-0">DL-DE->BY-2.0</a> <br/>
-              </p>
-              </span>
-    
-            <span class="Contact">
-            <h4 style="color:  #444"> Contact:</h4>
-            <p style="text-align: justify">
-            E-mail:geobase@xxx.xx<br/> 
-            Phone: xxx.xxxxxxxx<br/>
-            github:<a href="https://github.com/HsKA-OSGIS/geobase-back" >https://github.com/HsKA-OSGIS/geobase-back</a>
-    
-            </p>
-            </span>  
-        </div>
-
-<div class="overlay-container">
-  <span class='overlay-text' id='feature-value'></span><br>
-  <span class='overlay-text' id='feature-valueC'></span><br>
-  <span class='overlay-text' id='feature-valueT'></span><br>
-  <span class= 'overlay-text' id='feature-unit'></span> 
-</div>  
+    <!-- 
+    <div class="overlay-container">
+    <span class='overlay-text' id='feature-value'></span><br>
+    <span class='overlay-text' id='feature-valueC'></span><br>
+    <span class='overlay-text' id='feature-valueT'></span><br>
+    <span class= 'overlay-text' id='feature-unit'></span> 
+    </div>  
+     -->
 
 <!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css" type="text/css"/>
@@ -316,5 +333,5 @@
 <script type="module" src="main.js"></script>
 <script type="text/javascript" src="config/configurations.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/elm-pep@1.0.6/dist/elm-pep.js"></script>
-  </body>
+</body>
 </html>
