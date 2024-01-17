@@ -129,7 +129,7 @@
   padding: 5px; /* Some padding */
   display: table;
   width: 100%;
-  height: 20px;
+  height: 10px;
 
   table-layout: fixed; 
   background: #ddd; /* Grey background */
@@ -137,7 +137,7 @@
       .footer span{
   display: table-cell;
   text-align: center;
-  padding: 10px;
+  padding: 0px;
       }
     
 
@@ -261,9 +261,6 @@
       </div>
 
 
-
-    
-
         <div class="footer" style="font-size: x-small; color: #666;">
             <span class="About_the_Team">
             <h4 style="color:  #444">About the Team</h4>
@@ -286,7 +283,7 @@
               All code runs under the following licenses: <br> 
               GeoServer:&nbsp; <a href="https://opensource.org/license/gpl-2-0/">GNU General Public License version 2</a><br/> 
               Open Layers:&nbsp; <a href="https://opensource.org/licenses/BSD-2-Clause">BSD 2-Clause License</a><br/> 
-              Geobase:&ensp;&nbsp; <a href="https://opensource.org/license/gpl-2-0/">GNU General Public License version 2</a><br/>
+              Geobase:&ensp;&nbsp; <a href="https://opensource.org/licenses/BSD-2-Clause">BSD 2-Clause License</a><br/>
               ODL Data:&emsp;&emsp; <a href="http://www.gesetze-im-internet.de/geonutzv/eingangsformel.html">GeoNutzV</a>, <a href="https://www.govdata.de/dl-de/by-2-0">DL-DE->BY-2.0</a> <br/>
               </p>
               </span>
@@ -301,13 +298,14 @@
             </p>
             </span>  
         </div>
-
+<!-- 
 <div class="overlay-container">
   <span class='overlay-text' id='feature-value'></span><br>
   <span class='overlay-text' id='feature-valueC'></span><br>
   <span class='overlay-text' id='feature-valueT'></span><br>
   <span class= 'overlay-text' id='feature-unit'></span> 
 </div>  
+ --> 
 
 <!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css" type="text/css"/>
