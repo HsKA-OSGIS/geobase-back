@@ -94,7 +94,7 @@ For starting again Geoserver, you can run the codes from 6 to 9 steps, again.
   <code>  sudo service geoserver restart </code> 
 
 <b> -Visual Studio Code </b>
-
+To make changes in codes, Visual Studio Code (VS Code) was used.
 
 ## Front-end: OpenLayers + Vite
 
