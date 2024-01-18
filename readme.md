@@ -151,11 +151,11 @@ Bundesamt für Strahlenschutz for use of their [Geoportal](https://www.imis.bfs.
 
 ## Attributions
 
-<li>Open Layers is licensed under <a href="https://opensource.org/licenses/BSD-2-Clause">BSD 2-Clause License</a></li> <br>
-<li>OGC API is licensed under <a href="https://github.com/opengeospatial/ogcapi-features/blob/master/LICENSE">Permission is hereby granted by the Open Geospatial Consortium, ("Licensor")</a></li> <br> 
-<li>BfS ODL Data is licensed under <a href="http://www.gesetze-im-internet.de/geonutzv/eingangsformel.html">Ordinance on the determination of the terms of use for the provision of federal geodata (GeoNutzV)</a>, <a href="https://www.govdata.de/dl-de/by-2-0">Data License Germany - Attribution - Version 2.0.</a> </li> <br/>
-<li>Blue Marble Basemap is licensed under <a href="https://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause (New) License </a> </li> <br>
-<li>Git is licensed under <a href="https://git-scm.com/about">GNU General Public License version 2.0</a></li> <br>
+<li>Open Layers is licensed under <a href="https://opensource.org/licenses/BSD-2-Clause">BSD 2-Clause License</a></li>
+<li>OGC API is licensed under <a href="https://github.com/opengeospatial/ogcapi-features/blob/master/LICENSE">Permission is hereby granted by the Open Geospatial Consortium, ("Licensor")</a></li>  
+<li>BfS ODL Data is licensed under <a href="http://www.gesetze-im-internet.de/geonutzv/eingangsformel.html">Ordinance on the determination of the terms of use for the provision of federal geodata (GeoNutzV)</a>, <a href="https://www.govdata.de/dl-de/by-2-0">Data License Germany - Attribution - Version 2.0.</a> </li> 
+<li>Blue Marble Basemap is licensed under <a href="https://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause (New) License </a> </li>
+<li>Git is licensed under <a href="https://git-scm.com/about">GNU General Public License version 2.0</a></li> 
 <li>GitHub is licensed under <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository">MIT License</a></li>
 <li>VS Code is licensed under <a href="https://code.visualstudio.com/docs/supporting/FAQ">MIT License</a></li>
 
