@@ -1,10 +1,10 @@
 BSD 2-Clause License
 
-© Copyright 2023-2024, Geobase Contributors <br> <br>
+© Copyright 2023-2024, Geobase Contributors
     
-This license has also been called the “Simplified BSD License” and the “FreeBSD License”. <br>
+This license has also been called the “Simplified BSD License” and the “FreeBSD License”.
     
-The BSD 2-clause license allows you almost unlimited freedom with the software so long as you include the BSD copyright notice in it.<br>
+The BSD 2-clause license allows you almost unlimited freedom with the software so long as you include the BSD copyright notice in it.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
@@ -17,9 +17,9 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 All code runs under the following licenses:
 
 ©️ Open Layers is licensed under BSD 2-Clause License
-©️ OGC API is licensed under Permission is hereby granted by the Open Geospatial Consortium, ("Licensor")
+©️ OGC API is licensed under Permission hereby granted by the Open Geospatial Consortium, ("Licensor")
 ©️ BfS ODL Data is licensed under Ordinance on the determination of the terms of use for the provision of federal geodata (GeoNutzV), Data License Germany - Attribution - Version 2.0.
 ©️ Blue Marble Basemap is licensed under BSD 3-Clause (New) License
 ©️ Git is licensed under GNU General Public License version 2.0
-©️ GitHub is licensed under MIT License
-©️ VS Code is licensed under MIT License
+©️ GitHub is licensed under the MIT License
+©️ VS Code is licensed under the MIT License
