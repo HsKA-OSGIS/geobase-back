@@ -2,8 +2,8 @@
 A web application for displaying geographic data using the new OGC API Standards, Geoserver, and OpenLayers
 ## Overview
 <p>
-    Our Project is "Exploring (<a href="https://ogcapi.ogc.org/">OGC (Open Geospatial Consortium) API</a>) with Geoserver and OpenLayers (based on BfS (<a href="https://www.imis.bfs.de/geoportal/">the German Bundesamt fuer Strahlenschutz (BfS)</a>) radiological OGC services)". <br> <br> The accomplished project represents the results of the work within the Open Source GIS course during the Winter 2023-2024 semester as part of the Geomatics MSc, run by <a href="https://www.h-ka.de/">the Karlsruhe University of Applied Sciences</a> has published on <a href="https://github.com/HsKA-OSGIS/geobase-back">GitHUB</a>. <br> <br> The project as a whole aimed to explore the new features and possibilities offered by the new OGC API framework, a new standard based on OpenAPI which is succeeding the new OGS API standard.<br> <br>
-        Example data was obtained from an OWS service of Radiological Data hosted by <a href="https://www.imis.bfs.de/geoportal/">the German Bundesamt fuer Strahlenschutz (BfS)</a>. The project was built on the existing project done by <a href="https://github.com/HsKA-OSGIS-archive/GOSolutions/">GoSolutions</a> last Winter Semester(2022). 
+    Our Project is "Exploring <a href="https://ogcapi.ogc.org/">OGC (Open Geospatial Consortium) API</a> with Geoserver and OpenLayers (based on BfS (<a href="https://www.imis.bfs.de/geoportal/">the German Bundesamt fuer Strahlenschutz</a>) radiological OGC services)". <br> <br> The accomplished project represents the results of the work within the Open Source GIS course during the Winter 2023-2024 semester as part of the Geomatics MSc, run by <a href="https://www.h-ka.de/">the Karlsruhe University of Applied Sciences</a> has published on <a href="https://github.com/HsKA-OSGIS/geobase-back">GitHUB</a>. <br> <br> The project as a whole aimed to explore the new features and possibilities offered by the new OGC API framework, a new standard based on OpenAPI which is succeeding the new OGS API standard.<br> <br>
+        Example data was obtained from an OWS service of Radiological Data hosted by <a href="https://www.imis.bfs.de/geoportal/">the German Bundesamt fuer Strahlenschutz (BfS)</a>. The project was built on the existing project done by <a href="https://github.com/HsKA-OSGIS-archive/GOSolutions/">GoSolutions</a> last Winter Semester 2022-2023. 
 
 ## Project Files
 <ul>
@@ -28,7 +28,7 @@ A web application for displaying geographic data using the new OGC API Standards
 ## Installation 
 Follow installation instructions as necessary
 
-### Requirements 
+## Requirements 
 <ul>
   <li>Java</li>
   <li>Geoserver</li>
@@ -36,7 +36,7 @@ Follow installation instructions as necessary
   <li>-Node.js</li>
  <ul>
 
-### Back-end
+## Back-end
 <b> -GeoServer Installation </b>
 1. Documentation for Linux: <br>
     <a href="https://docs.geoserver.org/stable/en/user/installation/linux.html">GeoServer Documentation</a>
@@ -87,7 +87,7 @@ For starting again Geoserver, you can run the codes from 6 to 9 steps, again.
 <b> -Visual Studio Code </b>
 
 
-### Front-end: OpenLayers + Vite
+## Front-end: OpenLayers + Vite
 
 This example demonstrates how the `ol` package can be used with [Vite](https://vitejs.dev/).
 
@@ -124,7 +124,7 @@ To be able to run the project on Firefox; after install debugger for firefox, la
         }
     ]
   }
-### Authors
+## Authors
 
 - [Alina Khamzatova](https://github.com/alina-khamzatova)
 - [Irem Köz](https://github.com/iremkoz)
