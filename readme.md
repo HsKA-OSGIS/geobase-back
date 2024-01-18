@@ -103,8 +103,8 @@ To make changes in codes, Visual Studio Code (VS Code) is used.
 
 ## Front-end: OpenLayers + Vite
 1. To visualise the map in website, firstly go to the directory of project in terminal and run the following code (requires Node 14+):
-   <code> npm install</code><br>
-   <code> npm start</code><br>
+   <code>npm install</code><br>
+   <code>npm start</code><br>
 
    After running this code, it will show the localhost URL to open the map in browser.
 
