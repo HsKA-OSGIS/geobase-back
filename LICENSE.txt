@@ -1,21 +1,20 @@
-BSD 2-Clause License
-
-© Copyright 2023-2024, Geobase Contributors
-
-This license has also been called the “Simplified BSD License” and the “FreeBSD License”.
-The BSD 2-clause license allows you almost unlimited freedom with the software so long as you include the BSD copyright notice in it.
-BSD 2-Clause License
-Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
-
-Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
-
-Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-All code runs under the following licenses:
-
-Open Layers: BSD 2-Clause License,
-OGC API: Permission is hereby granted by the Open Geospatial Consortium, ("Licensor"),
-BfS ODL Data: Ordinance on the determination of the terms of use for the provision of federal geodata (GeoNutzV), Data License Germany - Attribution - Version 2.0.
-Blue Marble Basemap: BSD 3-Clause (New) License ,
-Git: GNU General Public License version 2.0,
-GitHub: MIT License, VS Code: MIT License
+<p> BSD 2-Clause License<br> <br>
+    © Copyright 2023-2024, Geobase Contributors <br> <br>
+    This license has also been called the “Simplified BSD License” and the “FreeBSD License”. <br>
+    The BSD 2-clause license allows you almost unlimited freedom with the software so long as you include the BSD copyright notice in it.<br>
+  </p> 
+    <center><img src="media/license.png"  alt="BSD 2-Clause License"></center>
+    <ul> Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: <br> <br>
+    <li> Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. </li> <br>
+    <li> Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. </li> </ul>
+<center>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </center>
+  
+<p>All code runs under the following licenses: <br> <br> 
+  Open Layers: <a href="https://opensource.org/licenses/BSD-2-Clause">BSD 2-Clause License</a>, <br>
+  OGC API: <a href="https://github.com/opengeospatial/ogcapi-features/blob/master/LICENSE">Permission is hereby granted by the Open Geospatial Consortium, ("Licensor")</a>, <br> 
+  BfS ODL Data: <a href="http://www.gesetze-im-internet.de/geonutzv/eingangsformel.html">Ordinance on the determination of the terms of use for the provision of federal geodata (GeoNutzV)</a>, <a href="https://www.govdata.de/dl-de/by-2-0">Data License Germany - Attribution - Version 2.0.</a> <br/>
+  Blue Marble Basemap: <a href="https://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause (New) License </a>, <br>
+  Git: <a href="https://git-scm.com/about">GNU General Public License version 2.0</a>, <br>
+  GitHub: <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository">MIT License</a>,
+  VS Code: <a href="https://code.visualstudio.com/docs/supporting/FAQ">MIT License</a>
+</p>
