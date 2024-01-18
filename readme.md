@@ -28,31 +28,3 @@ To generate a build ready for production:
     npm run build
 
 Then deploy the contents of the `dist` directory to your server.  You can also run `npm run serve` to serve the results of the `dist` directory for preview.
-
-## How to use
-
-## Project Documentation 
-
-### Concept
-## Further Improvements/How to contribute
-
-
-### Authors
-
-- [Alina Khamzatova](https://github.com/alina-khamzatova)
-- [Irem Köz]()
-- [Tanha Tanjimat]()
-- [Abubakar Siddique]()
-
-## Acknowledgements
-
-Bundesamt für Strahlenschutz for use of their [Geoportal](https://www.imis.bfs.de/geoportal/)
-
-- Monitors radiation in Germany
-- Provides public geoportal with hourly updated data
-
-## Attributions
-
-- GeoServer is licensed under an [GNU General Public License version 2](https://github.com/geoserver/geoserver/blob/main/LICENSE.md). 
-- OpenLayers is licensed under a [BSD 2-Clause "Simplified" License](https://github.com/openlayers/openlayers/blob/main/LICENSE.md).
-- BfS data is licensed under the [Ordinance on the determination of the terms of use for the provision of federal geodata (GeoNutzV)](http://www.gesetze-im-internet.de/geonutzv/), as well as [Data License Germany - Attribution - Version 2.0](https://www.govdata.de/dl-de/by-2-0).
