@@ -85,14 +85,14 @@ For starting again Geoserver, you can run the codes from 6 to 9 steps, again.
 1. Download Plug-in:<br>
    <a href="https://build.geoserver.org/geoserver/2.24.x/community-latest/geoserver-2.24-SNAPSHOT-ogcapi-features-plugin.zip">geoserver-2.24-SNAPSHOT-ogcapi-features-plugin.zip</a> <br>
    or download from terminal <br>
-   <code> wget <code>https://build.geoserver.org/geoserver/2.24.x/community-latest/geoserver-2.24-SNAPSHOT-ogcapi-features-plugin.zip </code> </code>
+   <code>wget <code>https://build.geoserver.org/geoserver/2.24.x/community-latest/geoserver-2.24-SNAPSHOT-ogcapi-features-plugin.zip </code> </code>
    
 2. Move the zip file into <code>/usr/share/geoserver/webapps/geoserver/WEB-INF/lib</code> and extract it: <br>
- <code> mv /home/user/Downloads/geoserver-2.24-SNAPSHOT-ogcapi-features-plugin.zip /usr/share/geoserver/webapps/geoserver/WEB-INF/lib </code> <br>
+ <code>mv /home/user/Downloads/geoserver-2.24-SNAPSHOT-ogcapi-features-plugin.zip /usr/share/geoserver/webapps/geoserver/WEB-INF/lib </code> <br>
  <code>unzip geoserver-2.24-SNAPSHOT-ogcapi-features-plugin.zip</code><br>
  
 3. Restart GeoServer to load the new plug-in by using this command: <br>
-  <code>  sudo service geoserver restart </code>
+  <code>sudo service geoserver restart </code>
   
 <b> -Getting BfS Data into GeoServer </b> <br>
 BfS data is taken as a new vector data source by using Web Feature Server in GeoServer. The retrieval URL from Data Interface page of BfS Server is used. Then, required layers are published. <br>
@@ -109,7 +109,7 @@ To make changes in codes, Visual Studio Code (VS Code) is used.
    After running this code, it will show the localhost URL to open the map in browser.
 
 2. To generate a build ready for production: <br>
-   <code> npm run build</code><br>
+   <code>npm run build</code><br>
 
 To be able to run the project on Firefox; after install debugger in VS Code for firefox, launch.json file in .vscode folder should be edited as:
 <code>
