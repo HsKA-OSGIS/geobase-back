@@ -82,13 +82,12 @@ For starting again Geoserver, you can run the codes from 6 to 9 steps, again.
 <b> -OGC API Plug-in in Geoserver </b>
 
 1. Download Plug-in:<br>
-   [https://build.geoserver.org/geoserver/2.24.x/community-latest/geoserver-2.24-SNAPSHOT-ogcapi-features-plugin.zip]
-   <a href="https://build.geoserver.org/geoserver/2.24.x/community-latest/geoserver-2.24-SNAPSHOT-ogcapi-features-plugin.zip">geoserver-2.24-SNAPSHOT-ogcapi-features-plugin.zip</a>
-   or from terminal <br>
-   <code> wget https://build.geoserver.org/geoserver/2.24.x/community-latest/geoserver-2.24-SNAPSHOT-ogcapi-features-plugin.zip </code>
+   <a href="https://build.geoserver.org/geoserver/2.24.x/community-latest/geoserver-2.24-SNAPSHOT-ogcapi-features-plugin.zip">geoserver-2.24-SNAPSHOT-ogcapi-features-plugin.zip</a> <br>
+   or download from terminal <br>
+   <code> wget <code>https://build.geoserver.org/geoserver/2.24.x/community-latest/geoserver-2.24-SNAPSHOT-ogcapi-features-plugin.zip </code> </code>
    
-2. Move the zip file into /usr/share/geoserver/webapps/geoserver/WEB-INF/lib and extract it-->
- <code> mv /home/user/Downloads/geoserver-2.24-SNAPSHOT-ogcapi-features-plugin.zip /usr/share/geoserver/webapps/geoserver/WEB-INF/lib </code> <br>
+2. Move the zip file into /usr/share/geoserver/webapps/geoserver/WEB-INF/lib and extract it: <br>
+ <code> mv  <code>/home/user/Downloads/geoserver-2.24-SNAPSHOT-ogcapi-features-plugin.zip /usr/share/geoserver/webapps/geoserver/WEB-INF/lib </code> </code> <br>
  <code>unzip geoserver-2.24-SNAPSHOT-ogcapi-features-plugin.zip</code><br>
 
 
