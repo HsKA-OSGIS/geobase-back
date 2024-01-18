@@ -107,7 +107,7 @@ To generate a build ready for production:
 Then deploy the contents of the `dist` directory to your server.  You can also run `npm run serve` to serve the results of the `dist` directory for preview.
 
 To be able to run the project on Firefox; after install debugger for firefox, launch.json file in .vscode folder should be edited as:
-
+<code>
   {
     "version": "0.2.0",
     "configurations": [
@@ -124,6 +124,7 @@ To be able to run the project on Firefox; after install debugger for firefox, la
         }
     ]
   }
+</code>
 ## Authors
 
 - [Alina Khamzatova](https://github.com/alina-khamzatova)
