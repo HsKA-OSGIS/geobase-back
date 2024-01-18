@@ -24,6 +24,7 @@ A web application for displaying geographic data using the new OGC API Standards
   <li>licence.png</li>
   </ul>
    <li>vite.config.js</li>
+</ul>
 
 ## Installation 
 Follow installation instructions as necessary
