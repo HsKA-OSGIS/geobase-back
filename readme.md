@@ -30,12 +30,11 @@ A web application for displaying geographic data using the new OGC API Standards
 Follow installation instructions as necessary
 
 ## Requirements 
-<ul>
+
   <li>Java</li>
   <li>Geoserver</li>
   <li>OGC API plugin</li>
   <li>-Node.js</li>
-<ul>
 
 ## Back-end
 <b> -GeoServer Installation </b>
