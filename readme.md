@@ -98,7 +98,7 @@ For starting again Geoserver, you can run the codes from 6 to 9 steps, again.
 BfS data is taken as a new vector data source using Web Feature Server in GeoServer using the retrieval URL from Data Interface page of BfS Server. Then, required layers are published. <br>
  <a href="https://odlinfo.bfs.de/ODL/EN/service/data-interface/data-interface_node.html">Data Interface Page of BfS Website</a>
 
-<b> -Visual Studio Code </b>
+<b> -Visual Studio Code </b> <br>
 To make changes in codes, Visual Studio Code (VS Code) was used.
 
 ## Front-end: OpenLayers + Vite
