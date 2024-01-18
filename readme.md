@@ -35,7 +35,7 @@ Follow installation instructions as necessary
   <li>Java</li>
   <li>Geoserver</li>
   <li>OGC API plugin</li>
-  <li>-Node.js</li>
+  <li>Node.js</li>
 
 ## Back-end
 <b> -GeoServer Installation </b>
