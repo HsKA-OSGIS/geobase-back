@@ -1,6 +1,6 @@
 # Geobase
-Exploring <a href="https://ogcapi.ogc.org/">OGC (Open Geospatial Consortium) API</a> with Geoserver and OpenLayers (based on BfS (<a href="https://www.imis.bfs.de/geoportal/">the German Bundesamt fuer Strahlenschutz</a>) radiological OGC services). <br>
-A web application for displaying geographic data using the new OGC API Standards, Geoserver, and OpenLayers
+Exploring <a href="https://ogcapi.ogc.org/">OGC (Open Geospatial Consortium) API</a> with Geoserver and OpenLayers (based on BfS (<a href="https://www.imis.bfs.de/geoportal/">the German Bundesamt fuer Strahlenschutz</a>) radiological OGC services). <br> <br>
+A web application for displaying geographic data using the new OGC API Standards, Geoserver, and OpenLayers.<br>
 ## Overview
 <p>
 The accomplished project represents the results of the work within the Open Source GIS course during the Winter 2023-2024 semester as part of the Geomatics MSc, run by <a href="https://www.h-ka.de/">the Karlsruhe University of Applied Sciences</a> has published on <a href="https://github.com/HsKA-OSGIS/geobase-back">GitHUB</a>. <br> <br> The project as a whole aimed to explore the new features and possibilities offered by the new OGC API framework, a new standard based on OpenAPI which is succeeding the new OGS API standard.<br> <br>
