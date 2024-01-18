@@ -111,7 +111,7 @@ To make changes in codes, Visual Studio Code (VS Code) is used.
 2. To generate a build ready for production: <br>
    <code>npm run build</code><br>
 
-To be able to run the project on Firefox; after install debugger in VS Code for firefox, launch.json file in .vscode folder should be edited as:
+To be able to run the project on Firefox; after installing debugger in VS Code for Firefox, launch.json file in .vscode folder should be edited as:
 <code>
   {
     "version": "0.2.0",
