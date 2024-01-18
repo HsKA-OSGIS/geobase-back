@@ -1,53 +1,38 @@
 <!DOCTYPE html>
-<html lang="en"  style="font-family:sans-serif;"></html>
+<html lang="en"  style="font-family:sans-serif;">
 <!-- <html lang="en"> -->
   <head>
     <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/x-icon" href="https://openlayers.org/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <!-- <link rel="icon" type="image/x-icon" href="https://openlayers.org/favicon.ico" />-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
     
     <link rel="Ol_styles" href="">
     <title>Geobase</title>
-    <script type="module" crossorigin src="/assets/index-56f58565.js"></script>
-    <link rel="stylesheet" href="/assets/index-c5c756a1.css">
+    <script type="module" crossorigin src="/assets/index-36dd0854.js"></script>
+    <link rel="stylesheet" href="/assets/index-23115e1d.css">
   </head>
   
-
     <style>
       body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
-      .map {
-  width: 100%;
-  height: 100px;
-  position: absolute;
-
-  }
 
       .header {
-
   padding-bottom: 0px; /* some padding */
-  padding-top: 10px;
+  padding-top: 5px;
   padding-left: 10px;
   background: #4D86F6; /* blue background */
   color: white; /* white text color */
   position: relative; 
-
   }
 
       .logo{
   padding-top: 0%; 
       }
 
-      .footer{
-   position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 20px;
- 
-      }
+      
 
       .titles{
   text-align: justify;        
@@ -55,16 +40,16 @@
 
       /* Style the top navigation bar */
       .navbar {
-  overflow: hidden; /* Hide overflow */
-  background-color: #4D86F6; /* Dark background color */
-  border: 2px solid #4D86F6;
+  /*overflow: hidden; /* Hide overflow */
+  background-color: #1F81C8; /* Dark background color */
+  border: 1px;
   }
 
       /* Style the navigation bar links */
       .navbar a {
   float: left; /* Make sure that the links stay side-by-side */
   display: block; /*Change the display to block, for responsive reasons (see below)*/
-  color: white; /* White text color */
+  color: #ffffff; /* White text color */
   text-align: center; /* Center the text */
   padding: 5px 10px; /* Add some padding */
   text-decoration: none; /* Remove underline */
@@ -96,14 +81,11 @@
 
       /* Sidebar/left column */
       .side {
-  width: 18%; /* Set the width of the sidebar */
+  width: 15%; /* Set the width of the sidebar */
   background-color: #fcfdfd; /* Grey background color */
   padding: 20px; /* Some padding */
   position: relative; 
-  height: 400px;
-  width: 15%;
-
-
+  height: 600px;
 
   }
 
@@ -128,85 +110,21 @@
 
       .footer {
 
-  padding: 5px; /* Some padding */
+  padding: 0px; /* Some padding */
   display: table;
   width: 100%;
-  height: 20px;
+  height: 15px;
 
   table-layout: fixed; 
-  background: #ddd; /* Grey background */
+  background: #bfceeb; /* Grey background */
   }
       .footer span{
   display: table-cell;
   text-align: center;
-  padding: 10px;
+  padding: 0px;
       }
     
 
-  /* Popup Layout*/
-  .overlay-container{
-  background: rgba(77,134,247,0.7);
-  color: white;
-  width: 190px;
-  border-radius: 5px;
-  text-align: center;
-  padding: 2px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -80px;
-  transition: opacity 100ms ease-in;
-
-      }
-
-      .overlay-container #feature-unit::after{
-  content:'';
-  position: absolute;
-  z-index: 1;
-  top: 100%;
-  left: 50%;
-  margin-left: -10px;
-  border-width: 10px;
-  border-style: solid;
-  border-color: rgb(42, 42, 42);
-      }
-
-      .overlay-container #feature-value::after{
-  content:'';
-  /* position: absolute; */
-  z-index: 1;
-  top: 100%;
-  left: 50%;
-  margin-left: -10px;
-  border-width: 10px;
-  border-style: solid;
-  border-color: black;
-      }
-
-      .overlay-container #feature-valueC::after{
-  content:'';
-  position: absolute;
-  z-index: 1;
-  top: 100%;
-  left: 50%;
-  margin-left: -10px;
-  border-width: 10px;
-  border-style: solid;
-  border-color: black;
-      }
-
-      .overlay-container #feature-valueT::after{
-  content:'';
-  position: absolute;
-  z-index: 1;
-  top: 100%;
-  left: 50%;
-  margin-left: -10px;
-  border-width: 10px;
-  border-style: solid;
-  border-color: black;
-      }
       .LayerSwitch{
   margin-left: 15px;
 
@@ -216,100 +134,113 @@
   margin-left: 15px;
 
       }
+      p {
+  margin: 10px 0;
+  padding: 5px;
+  border: 1px solid #999;}
 
   </style>
 
+
+<body>
+    
+  <div class="header">
+    <div class="logo">
+       <img src="/assets/geobas_logo-d3425e98.png" height="100px" width="100px" style="float:left;">
+    </div>
+    <div class="titles">
+      <h2> Geobase </h2>
+      <h3>Exploring OGC API with Geoserver and OpenLayers : Gamma Dose Rates</h3>
+    </div>
+  </div>
   
-  <body>
+  <div class="navbar">
+    <a href="index.html">Home</a>
+      <a href="orginal_data_source.html">Original Data Souce</a>
+      <a href="ogc_api_documentation.html">OGC API Documentation</a>
+      <a href="about_the_project.html">About the Project</a>
+      <a href="license_page.html">Licence</a>
+      <a href="github_repository.html">Our GitHub Repository</a>
     
-    <div class="header">
-      <div class="logo">
-         <img src="/assets/logo2_Kopie-d3425e98.png" height="100xp" width="100xp" style="float:left;">
-      </div>
-      <div class="titles">
-        <h2> Geobase </h2>
-        <h3>Gamma Dose Rates:</h3>
-      </div>
-    </div>
-    
-    <div class="navbar">
-      <a href="https://www.imis.bfs.de/geoportal/">Original Data</a>
-      <a href="https://ogcapi.ogc.org/">OGC API Documentation</a>
-      <a href="https://github.com/HsKA-OSGIS/geobase-back" class="right">Our GitHub</a>
+  </div>
+  
+  <!-- <div id="map"></div>
+  <script type="module" src="./main.js"></script> -->
+
+
+  <div class="row">
+
+      <div id="map" class="map"></div>
       
+      <div class="side">
+        <div class="Legend">
+     
+          <h3 >Legend:</h3>
+          <img src="data:image/jpeg;base64,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">
+          
+        </div>
+       
+        <div class="LayerSwitch">
+          <h3 style="font-family:verdana;">Basemaps</h3>
+          <input type="radio" name="baseLayerRadioButton" value="OSMStandard" checked>OSM Standard<br>
+          <input type="radio" name="baseLayerRadioButton" value="BlueMarble" >Blue Marble
+        </div>
+       
+      
+      </div>
+    </div>
+
+
+    <div class="footer" style="font-size: x-small; color: #666;">
+      <span class="About_the_Team">
+      <h4 style="color:  #444">About the Team</h4>
+      <p style="margin: 10px 0;padding: 5px;border: 3px ;text-indent: 10px;">
+          The Geobase Team:
+          <br>
+          Alina Khamzatova, İrem Köz, Tanha Tanjimat & <br>Abubakar Siddique.   
+          </p>
+      </span>
+    
+      <span class="projectDetails">
+          <h4 style="color:  #444">About the Project:</h4>
+          <p style="margin: 10px 0;padding: 5px;border: 3px ;text-indent: 10px;"> Our Project is Exploring OGC (Open Geospatial Consortium) API with Geoserver and OpenLayers (based on BfS (Bundesamt für Strahlenschutz) radiological OGC services).
+            </p>
+      </span>  
+    
+      <span class="licensing">
+      <h4 style="color:  #444"> Licenses:</h4>
+      <p style="margin: 10px 0;padding: 5px;border: 3px ;text-indent: 10px;">
+        BSD 2-Clause License<br> <br>
+        © Copyright 2023-2024, Geobase Contributors <br> 
+        <!--
+      All code runs under the following licenses: <br> 
+      Open Layers: <a href="https://opensource.org/licenses/BSD-2-Clause">BSD 2-Clause License</a>,
+      Geobase: <a href="https://opensource.org/licenses/BSD-2-Clause">BSD 2-Clause License</a>, ODL Data: <a href="http://www.gesetze-im-internet.de/geonutzv/eingangsformel.html">GeoNutzV</a>, <a href="https://www.govdata.de/dl-de/by-2-0">DL-DE->BY-2.0</a> <br/>
+      Blue Marble Basemap: <a href="https://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause (New) License </a>
+    -->
+    
+    </p>
+      </span>  
+    
+      <span class="Contact">
+      <h4 style="color:  #444"> Contact:</h4>
+      <p style="margin: 10px 0;padding: 5px;border: 3px ;text-indent: 10px;">
+      E-mail:geobase@xxx.xx<br/> 
+      Phone: xxx.xxxxxxxx<br/>
+      github:<a href="https://github.com/HsKA-OSGIS/geobase-back" >https://github.com/HsKA-OSGIS/geobase-back</a>
+    
+      </p>
+      </span>  
     </div>
     
-    <!-- <div id="map"></div>
-    <script type="module" src="./main.js"></script> -->
-
-
-    <div class="row">
-
-        <div id="map" class="map"></div>
-        <div class="side">
-          <div class="Legend">
-            <h3 >Legend:</h3>
-            <img src="/assets/Legend-e02c998e.png">
-          </div>
-          
-          <div class="LayerSwitch">
-            <h3 style="font-family:verdana;">Layers</h3>
-            <input type="radio" name="baseLayerRadioButton" value="OSMStandard" checked>OSM Standard<br>
-            <input type="radio" name="baseLayerRadioButton" value="BlueMarble" >Blue Marble
-          </div>
-         
-          
-        </div>
-      </div>
-
-
-
-    
-
-        <div class="footer" style="font-size: x-small; color: #666;">
-            <span class="About_the_Team">
-            <h4 style="color:  #444">About the Team</h4>
-            <p style="text-align: justify">
-                The Geobase Team:
-                <br/>
-                Alina Khamzatova, İrem Köz, Tanha Tanjimat, Abubakar Siddique.   
-                </p>
-            </span>
-    
-            <span class="projectDetails">
-              <h4 style="color:  #5a5959">About the Project:</h4>
-              <p style="text-align: justify"> This webpage presents the latest hourly gamma dose rates from German measurement stations, sourced from the <a rel="bfs" href="https://www.imis.bfs.de/geoportal/">Bundesamt für Strahlenschutz</a> website. It showcases data using the <a href="https://ogcapi.ogc.org/features/">new OGC API-Feature standard</a> instead of the traditional WFS standard, serving as an example for future adoptions of this OGC Standard. For more details on the new OGC API standard, refer to the link in the top menu bar. 
-              </p>
-          </span>  
-    
-            <span class="licensing">
-              <h4 style="color:  #5a5959"> Licenses:</h4>
-              <p style="text-align: justify">
-              All code runs under the following licenses: <br> 
-              GeoServer:&nbsp; <a href="https://opensource.org/licenses/BSD-2-Clause">BSD 2-Clause License</a><br/> 
-              Open Layers:&nbsp; <a href="https://opensource.org/licenses/BSD-2-Clause">BSD 2-Clause License</a><br/> 
-              Geobase:&ensp;&nbsp; <a href="https://opensource.org/licenses/BSD-2-Clause">BSD 2-Clause License</a><br/>
-              ODL Data:&emsp;&emsp; <a href="http://www.gesetze-im-internet.de/geonutzv/eingangsformel.html">GeoNutzV</a>, <a href="https://www.govdata.de/dl-de/by-2-0">DL-DE->BY-2.0</a> <br/>
-              </p>
-              </span>
-    
-            <span class="Contact">
-            <h4 style="color:  #444"> Contact:</h4>
-            <p style="text-align: justify">
-            E-mail:geobase@xxx.xx<br/> 
-            Phone: xxx.xxxxxxxx<br/>
-            github:<a href="https://github.com/HsKA-OSGIS/geobase-back" >https://github.com/HsKA-OSGIS/geobase-back</a>
-    
-            </p>
-            </span>  
-        </div>
-
-<div class="overlay-container">
-  <span class='overlay-text' id='feature-value'></span><br>
-  <span class='overlay-text' id='feature-valueC'></span><br>
-  <span class='overlay-text' id='feature-valueT'></span><br>
-  <span class= 'overlay-text' id='feature-unit'></span> 
-</div>  
+    <!-- 
+    <div class="overlay-container">
+    <span class='overlay-text' id='feature-value'></span><br>
+    <span class='overlay-text' id='feature-valueC'></span><br>
+    <span class='overlay-text' id='feature-valueT'></span><br>
+    <span class= 'overlay-text' id='feature-unit'></span> 
+    </div>  
+     -->
 
 <!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css" type="text/css"/>
@@ -318,5 +249,5 @@
 
 <script type="text/javascript" src="config/configurations.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/elm-pep@1.0.6/dist/elm-pep.js"></script>
-  </body>
+</body>
 </html>
