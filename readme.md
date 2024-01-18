@@ -6,7 +6,7 @@ A web application for displaying geographic data using the new OGC API Standards
         Example data was obtained from an OWS service of Radiological Data hosted by <a href="https://www.imis.bfs.de/geoportal/">the German Bundesamt fuer Strahlenschutz (BfS)</a>. The project was built on the existing project done by <a href="https://github.com/HsKA-OSGIS-archive/GOSolutions/">GoSolutions</a> last Winter Semester 2022-2023. 
 
 ## Project Files
-<ul>
+
   <li>index.html</li>
   <li>style.css</li>
   <li>main.js</li>
@@ -24,7 +24,7 @@ A web application for displaying geographic data using the new OGC API Standards
   <li>licence.png</li>
   </ul>
    <li>vite.config.js</li>
-</ul>
+
 
 ## Installation 
 Follow installation instructions as necessary
@@ -35,7 +35,7 @@ Follow installation instructions as necessary
   <li>Geoserver</li>
   <li>OGC API plugin</li>
   <li>-Node.js</li>
- <ul>
+<ul>
 
 ## Back-end
 <b> -GeoServer Installation </b>
