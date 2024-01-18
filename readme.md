@@ -92,7 +92,10 @@ For starting again Geoserver, you can run the codes from 6 to 9 steps, again.
  <code>unzip geoserver-2.24-SNAPSHOT-ogcapi-features-plugin.zip</code><br>
  
 3. Restart GeoServer to load the new plug-in by using this command: <br>
-  <code>  sudo service geoserver restart </code> 
+  <code>  sudo service geoserver restart </code>
+  
+<b> -Getting BfS Data into GeoServer </b>
+
 
 <b> -Visual Studio Code </b>
 To make changes in codes, Visual Studio Code (VS Code) was used.
