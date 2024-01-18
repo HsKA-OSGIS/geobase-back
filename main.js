@@ -7,19 +7,33 @@ import VectorLayer from 'ol/layer/Vector';
 import GeoJSON from 'ol/format/GeoJSON';
 import { Circle as CircleStyle, Fill, Stroke, Style } from 'ol/style';
 import { fromLonLat } from 'ol/proj';
+import  Group from 'ol/layer/Group';
+import  Tile  from 'ol/layer/Tile';
+import OGCMapTile from 'ol/source/OGCMapTile';
+
 
 const map = new Map({
   target: 'map',
-  layers: [
-    new TileLayer({
-      source: new OSM()
-    })
-  ],
   view: new View({
     center: fromLonLat([10.4515, 51.1657]),
     zoom: 6
   })
 });
+
+//Basemap
+const OSMStandard = new TileLayer({
+  source: new OSM(),
+  visible: true,
+  title: "OSMStandard"
+});
+const blueMarble = new TileLayer({
+  source: new OGCMapTile({
+  url: 'https://maps.ecere.com/ogcapi/collections/blueMarble/map/tiles/WebMercatorQuad',
+  }),
+  visibility: false,
+  title: "BlueMarble"
+});
+
 
 async function loadGeoData() {
   try {
@@ -43,29 +57,29 @@ async function loadGeoData() {
 
 
 //styling of the Point Features by their Value 
-var lessthan008 = new Style( {
+var lessthan2 = new Style( {
   image: new CircleStyle( {
       radius: 5,
       fill: new Fill( {
-          color: 'rgba(238, 248, 175, 0.7)',
+          color: 'rgba(255, 255, 255, 1)',
           opacity: 0.6                        
       } ),
       stroke: new Stroke({
-          color: 'rgba(140, 140, 140, 0.5)',
-          width: 0.5,
+          color: 'rgba(0, 0, 0, 1)',
+          width: 1,
         })
   } )
 } );
 
-var morethan008 = new Style( {
+var morethan0 = new Style( {
   image: new CircleStyle( {
       radius: 5,
       fill: new Fill( {
-          color: "rgba(188, 248, 113, 0.7)",
+          color: "rgba(237, 248, 177, 1)",
       } ),
       stroke: new Stroke({
-          color: 'rgba(140, 140, 140, 0.5)',
-          width: 0.5,
+          color: 'rgba(0, 0, 0, 1)',
+          width: 1,
         })
   } )
 } );
@@ -74,24 +88,11 @@ var morethan1 = new Style( {
   image: new CircleStyle( {
       radius: 5,
       fill: new Fill( {
-          color: "rgba(203, 233, 179, 0.7)",
+          color: "rgba(199, 233, 180, 1)",
       } ),
       stroke: new Stroke({
-          color: 'rgba(140, 140, 140, 0.5)',
-          width: 0.5,
-        })
-  } )
-} );
-
-var morethan2 = new Style( {
-  image: new CircleStyle( {
-      radius: 5,
-      fill: new Fill( {
-          color: "rgba(138, 205, 187, 0.7)",
-      } ),
-      stroke: new Stroke({
-          color: 'rgba(140, 140, 140, 0.5)',
-          width: 0.5,
+          color: 'rgba(0, 0, 0, 1)',
+          width: 1,
         })
   } )
 } );
@@ -100,48 +101,73 @@ var morethan3 = new Style( {
   image: new CircleStyle( {
       radius: 5,
       fill: new Fill( {
-          color: "rgba(87, 182, 196, 0.7)",
+          color: "rgba(127, 205, 187, 1)",
       } ),
       stroke: new Stroke({
-          color: 'rgba(140, 140, 140, 0.5)',
-          width: 0.5,
+          color: 'rgba(0, 0, 0, 1)',
+          width: 1,
         })
   } )
 } );
 
-var morethan4 = new Style( {
+var morethan10 = new Style( {
   image: new CircleStyle( {
       radius: 5,
       fill: new Fill( {
-          color: "rgba(57, 146, 193, 0.7)",
+          color: "rgba(65, 182, 196, 1)",
       } ),
       stroke: new Stroke({
-          color: 'rgba(140, 140, 140, 0.5)',
-          width: 0.5,
+          color: 'rgba(0, 0, 0, 1)',
+          width: 1,
         })
   } )
 } );
 
-var morethan5 = new Style( {
+var morethan30 = new Style( {
   image: new CircleStyle( {
       radius: 5,
       fill: new Fill( {
-          color: "rgba(19, 46, 133, 0.7)",
+          color: "rgba(29, 145, 192, 1)",
       } ),
       stroke: new Stroke({
-          color: 'rgba(140, 140, 140, 0.5)',
-          width: 0.5,
+          color: 'rgba(0, 0, 0, 1)',
+          width: 1,
         })
   } )
 } );
 
-var morethan6 = new Style( {
+var morethan100 = new Style( {
   image: new CircleStyle( {
       radius: 5,
-      fill: new Fill( {color: "rgba(85, 2, 91, 0.7)",} ),
+      fill: new Fill( {
+          color: "rgba(34, 94, 168, 1)",
+      } ),
       stroke: new Stroke({
-          color: 'rgba(140, 140, 140, 0.5)',
-          width: 0.5,
+          color: 'rgba(0, 0, 0, 1)',
+          width: 1,
+        })
+  } )
+} );
+
+var morethan300 = new Style( {
+  image: new CircleStyle( {
+      radius: 5,
+      fill: new Fill( {color: "rgba(12, 44, 132, 1)",} ),
+      stroke: new Stroke({
+           color: 'rgba(0, 0, 0, 1)',
+           width: 1,
+        })
+
+  } )
+} );
+
+var morethan1000 = new Style( {
+  image: new CircleStyle( {
+      radius: 5,
+      fill: new Fill( {color: "rgba(90, 0, 90, 1)",} ),
+      stroke: new Stroke({
+           color: 'rgba(0, 0, 0, 1)',
+           width: 1,
         })
 
   } )
@@ -150,22 +176,24 @@ var morethan6 = new Style( {
 // assigning styles to features depending on their value
 function radiationStyleFunction(feature) {
 var radiationValue = feature.get('value');
-if (radiationValue < 0.8) {
-return [lessthan008];
-} else if (radiationValue >= 0.8 && radiationValue < 1) {
-return [morethan008];
-} else if (radiationValue >= 1 && radiationValue < 2) {
+if (radiationValue <= 2) {
+return [lessthan2];
+//} else if (radiationValue >= 0 && radiationValue < 1) {
+//return [morethan0];
+} else if (radiationValue > 2 && radiationValue < 3) {
 return [morethan1];
-} else if (radiationValue >= 2 && radiationValue < 3) {
-return [morethan2];
-} else if (radiationValue >= 3 && radiationValue < 4) {
+} else if (radiationValue >= 3 && radiationValue < 10) {
 return [morethan3];
-} else if (radiationValue >= 4 && radiationValue < 5) {
-return [morethan4];
-} else if (radiationValue >= 5 && radiationValue < 6) {
-return [morethan5];
+} else if (radiationValue >= 10 && radiationValue < 30) {
+return [morethan10];
+} else if (radiationValue >= 30 && radiationValue < 100) {
+return [morethan30];
+} else if (radiationValue >= 100 && radiationValue < 300) {
+return [morethan100];
+} else if (radiationValue >= 300&& radiationValue < 1000) {
+  return [morethan300];
 } else {
-return [morethan6];
+return [morethan1000];
 }
 }
 
@@ -182,3 +210,23 @@ return [morethan6];
 }
 
 loadGeoData();
+
+// Layer Switcher
+const baselayerGroup = new Group({
+  layers:[blueMarble, OSMStandard]
+});
+
+map.addLayer(baselayerGroup); 
+const  baselayerElements = document.querySelectorAll('.LayerSwitch > input[type=radio]');
+for (let baselayerElement of baselayerElements){
+  baselayerElement.addEventListener('change', function(){
+      let baseElementLayerValue= this.value;
+      baselayerGroup.getLayers().forEach(function(element,index,array){
+          let baselayerTytle = element.get('title');
+          element.setVisible(baselayerTytle === baseElementLayerValue);
+          console.log(baselayerTytle, 'baseElementLayerValue: '+ baseElementLayerValue) 
+
+      })
+  })
+  
+};
