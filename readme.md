@@ -86,10 +86,12 @@ For starting again Geoserver, you can run the codes from 6 to 9 steps, again.
    or download from terminal <br>
    <code> wget <code>https://build.geoserver.org/geoserver/2.24.x/community-latest/geoserver-2.24-SNAPSHOT-ogcapi-features-plugin.zip </code> </code>
    
-2. Move the zip file into /usr/share/geoserver/webapps/geoserver/WEB-INF/lib and extract it: <br>
- <code> mv  <code>/home/user/Downloads/geoserver-2.24-SNAPSHOT-ogcapi-features-plugin.zip /usr/share/geoserver/webapps/geoserver/WEB-INF/lib </code> </code> <br>
+2. Move the zip file into <code>/usr/share/geoserver/webapps/geoserver/WEB-INF/lib</code> and extract it: <br>
+ <code> mv /home/user/Downloads/geoserver-2.24-SNAPSHOT-ogcapi-features-plugin.zip /usr/share/geoserver/webapps/geoserver/WEB-INF/lib </code> <br>
  <code>unzip geoserver-2.24-SNAPSHOT-ogcapi-features-plugin.zip</code><br>
-
+ 
+3. Restart GeoServer to load the new plug-in by using this command: <br>
+  <code>  sudo service geoserver restart </code> 
 
 <b> -Visual Studio Code </b>
 
