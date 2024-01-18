@@ -1,8 +1,9 @@
-# Geobase 
+# Geobase
+Exploring <a href="https://ogcapi.ogc.org/">OGC (Open Geospatial Consortium) API</a> with Geoserver and OpenLayers (based on BfS (<a href="https://www.imis.bfs.de/geoportal/">the German Bundesamt fuer Strahlenschutz</a>) radiological OGC services). <br>
 A web application for displaying geographic data using the new OGC API Standards, Geoserver, and OpenLayers
 ## Overview
 <p>
-    Our Project is "Exploring <a href="https://ogcapi.ogc.org/">OGC (Open Geospatial Consortium) API</a> with Geoserver and OpenLayers (based on BfS (<a href="https://www.imis.bfs.de/geoportal/">the German Bundesamt fuer Strahlenschutz</a>) radiological OGC services)". <br> <br> The accomplished project represents the results of the work within the Open Source GIS course during the Winter 2023-2024 semester as part of the Geomatics MSc, run by <a href="https://www.h-ka.de/">the Karlsruhe University of Applied Sciences</a> has published on <a href="https://github.com/HsKA-OSGIS/geobase-back">GitHUB</a>. <br> <br> The project as a whole aimed to explore the new features and possibilities offered by the new OGC API framework, a new standard based on OpenAPI which is succeeding the new OGS API standard.<br> <br>
+The accomplished project represents the results of the work within the Open Source GIS course during the Winter 2023-2024 semester as part of the Geomatics MSc, run by <a href="https://www.h-ka.de/">the Karlsruhe University of Applied Sciences</a> has published on <a href="https://github.com/HsKA-OSGIS/geobase-back">GitHUB</a>. <br> <br> The project as a whole aimed to explore the new features and possibilities offered by the new OGC API framework, a new standard based on OpenAPI which is succeeding the new OGS API standard.<br> <br>
         Example data was obtained from an OWS service of Radiological Data hosted by <a href="https://www.imis.bfs.de/geoportal/">the German Bundesamt fuer Strahlenschutz (BfS)</a>. The project was built on the existing project done by <a href="https://github.com/HsKA-OSGIS-archive/GOSolutions/">GoSolutions</a> last Winter Semester 2022-2023. 
 
 ## Project Files
@@ -150,6 +151,11 @@ Bundesamt für Strahlenschutz for use of their [Geoportal](https://www.imis.bfs.
 
 ## Attributions
 
-- GeoServer is licensed under an [GNU General Public License version 2](https://github.com/geoserver/geoserver/blob/main/LICENSE.md). 
-- OpenLayers is licensed under a [BSD 2-Clause "Simplified" License](https://github.com/openlayers/openlayers/blob/main/LICENSE.md).
-- BfS data is licensed under the [Ordinance on the determination of the terms of use for the provision of federal geodata (GeoNutzV)](http://www.gesetze-im-internet.de/geonutzv/), as well as [Data License Germany - Attribution - Version 2.0](https://www.govdata.de/dl-de/by-2-0).
+<li>Open Layers is licensed under <a href="https://opensource.org/licenses/BSD-2-Clause">BSD 2-Clause License</a></li> <br>
+<li>OGC API is licensed under <a href="https://github.com/opengeospatial/ogcapi-features/blob/master/LICENSE">Permission is hereby granted by the Open Geospatial Consortium, ("Licensor")</a></li> <br> 
+<li>BfS ODL Data is licensed under <a href="http://www.gesetze-im-internet.de/geonutzv/eingangsformel.html">Ordinance on the determination of the terms of use for the provision of federal geodata (GeoNutzV)</a>, <a href="https://www.govdata.de/dl-de/by-2-0">Data License Germany - Attribution - Version 2.0.</a> </li> <br/>
+<li>Blue Marble Basemap is licensed under <a href="https://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause (New) License </a> </li> <br>
+<li>Git is licensed under <a href="https://git-scm.com/about">GNU General Public License version 2.0</a></li> <br>
+<li>GitHub is licensed under <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository">MIT License</a></li>
+<li>VS Code is licensed under <a href="https://code.visualstudio.com/docs/supporting/FAQ">MIT License</a></li>
+
