@@ -102,7 +102,8 @@ BfS data is taken as a new vector data source by using Web Feature Server in Geo
 <b> -CORS Settings in GeoServer Configuration</b> 
 
 In GeoServer configuration, CORS settings are needed to allow sharing resources between local host ports (Geoserver port number: 8080 and OpenLayers port number: 5173). 
-web.xml file can be checked in this directory --> C:\Program Files\GeoServer\webapps\geoserver\WEB-INF
+web.xml file can be checked in this directory:<br>
+<code>/usr/share/geoserver/webapps/geoserver/WEB-INF/</code>
 
 ## Front-end: OpenLayers + Vite
 1. To visualise the map in website, firstly go to the directory of project in terminal and run the following code (requires Node 14+): <br>
