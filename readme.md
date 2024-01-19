@@ -129,8 +129,8 @@ To be able to run the project on Firefox; after installing debugger in VS Code f
 </code>
 
 <b> -Visual Studio Code for Web Programming  </b> <br>
-To create and make changes in codes, Visual Studio Code (VS Code) is used. It is free and built on open source. 
-<a href="https://code.visualstudio.com/download">Download Visual Studio Code VSCode</a>
+To create and make changes in codes, Visual Studio Code (VS Code) is used. It is free and built on open source. <br>
+        <a href="https://code.visualstudio.com/download">Download Visual Studio Code VSCode</a>
 
 ## Authors
 
