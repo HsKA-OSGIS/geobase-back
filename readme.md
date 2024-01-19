@@ -28,13 +28,13 @@ The accomplished project represents the results of the work within the Open Sour
 
 
 ## Installation 
-Follow installation instructions as necessary
+To run and make changes in the project, please follow installation instructions below as necessary. If it is required only to run the project, then <b>Node.js and npm codes</b> are not needed. 
 
 ## Requirements 
 
   <li>Java</li>
   <li>Geoserver</li>
-  <li>OGC API plugin</li>
+  <li>OGC API Plug-in</li>
   <li>Node.js</li>
 
 ## Back-end
@@ -99,7 +99,7 @@ BfS data is taken as a new vector data source by using Web Feature Server in Geo
  <a href="https://odlinfo.bfs.de/ODL/EN/service/data-interface/data-interface_node.html">Data Interface Page of BfS Website</a>
 
 ## Front-end: OpenLayers + Vite
-1. To visualise the map in website, firstly go to the directory of project in terminal and run the following code (requires Node 14+):
+1. To visualise the map in website, firstly go to the directory of project in terminal and run the following code (requires Node 14+): <br>
    <code>npm install</code><br>
    <code>npm start</code><br>
 
