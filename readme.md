@@ -94,11 +94,13 @@ For starting again Geoserver, you can run the codes from 6 to 9 steps, again.
 3. Restart GeoServer to load the new plug-in by using this command: <br>
   <code>sudo service geoserver restart </code>
   
-<b> -Getting BfS Data into GeoServer </b> <br>
+<b> -Getting BfS Data into GeoServer </b> 
+
 BfS data is taken as a new vector data source by using Web Feature Server in GeoServer. The retrieval URL from Data Interface page of BfS Server is used. Then, requested layers are published. <br>
  <a href="https://odlinfo.bfs.de/ODL/EN/service/data-interface/data-interface_node.html">Data Interface Page of BfS Website</a>
 
-<b> -CORS Settings in GeoServer Configuration</b> <br>
+<b> -CORS Settings in GeoServer Configuration</b> 
+
 In GeoServer configuration, CORS settings are needed to allow sharing resources between local host ports (Geoserver 8080 and OpenLayers 5173). web.xml file can be checked in this directory:C:\Program Files\GeoServer\webapps\geoserver\WEB-INF
 
 ## Front-end: OpenLayers + Vite
