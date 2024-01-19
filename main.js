@@ -37,7 +37,7 @@ const blueMarble = new TileLayer({
 
 async function loadGeoData() {
   try {
-    let response = await fetch('http://localhost:8080/geoserver/ogc/features/v1/collections/workspace%3Aopendata_bfg_gesamt_gamma/items?limit=1000&filter-lang=cql-text');
+    let response = await fetch('http://localhost:8080/geoserver/ogc/features/v1/collections/workspace:opendata_bfg_gesamt_gamma/items?f=application%2Fjson&limit=50');
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
